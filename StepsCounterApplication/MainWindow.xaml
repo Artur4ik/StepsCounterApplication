@@ -1,0 +1,34 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StepsCounterApplication"
+        xmlns:Forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" x:Class="StepsCounterApplication.MainWindow"
+        mc:Ignorable="d"
+        Title="Анализ шагов" Height="419" Width="939" ContentRendered="Window_ContentRendered">
+    <Grid Margin="5,0,5,5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="441*"/>
+            <ColumnDefinition Width="428*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Список пользователей" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="218" Grid.ColumnSpan="2"/>
+        <Label Content="График по выбранному пользователю" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="364" Grid.Column="2"/>
+        <DataGrid x:Name="GridTable" HorizontalAlignment="Left" Height="301" Margin="10,67,0,0" VerticalAlignment="Top" Width="506" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="3" LoadingRow="GridTable_LoadingRow" MouseUp="GridTable_MouseUp" IsReadOnly="True">
+            <DataGrid.DataContext>
+                <Forms:Label/>
+            </DataGrid.DataContext>
+        </DataGrid>
+        <Canvas x:Name="Plot" HorizontalAlignment="Left" Height="300" Margin="71,68,0,0" VerticalAlignment="Top" Width="300" Grid.Column="2">
+            <Label Content="Кол-во шагов" HorizontalAlignment="Left" Canvas.Left="521" Canvas.Top="41" VerticalAlignment="Top"/>
+        </Canvas>
+        <Button Content="Сохранить данные" HorizontalAlignment="Left" Margin="173,19,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Column="1"/>
+        <Label x:Name="LabelSteps" Grid.Column="2" Content="" HorizontalAlignment="Left" Margin="28,67,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelDays" Grid.Column="2" Content="" HorizontalAlignment="Left" Margin="344,342,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="2" Content="Кол-во шагов" HorizontalAlignment="Left" Margin="20,41,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="2" Content="День" HorizontalAlignment="Left" Margin="376,342,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

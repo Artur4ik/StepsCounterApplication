@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepsCounterApplication", "StepsCounterApplication\StepsCounterApplication.csproj", "{62B2B280-C4E6-437B-A521-A0592DD95142}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62B2B280-C4E6-437B-A521-A0592DD95142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62B2B280-C4E6-437B-A521-A0592DD95142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62B2B280-C4E6-437B-A521-A0592DD95142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62B2B280-C4E6-437B-A521-A0592DD95142}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89319477-54B0-4DE1-BEB8-94DD5F73FCE5}
+	EndGlobalSection
+EndGlobal
